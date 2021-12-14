@@ -40,10 +40,12 @@ else:
     for x in myresult:
         if( x[1] == sys.argv[1] and x[3] == sys.argv[2]):
             file = open("login.txt","w")
-            file.write(str(x[0])) 
-            file.write('\n') 
-            file.write(str(x[1])) 
-            file.write('\n') 
-            file.write(str(x[2])) 
+  #          file.write(str(x[0])) 
+    #        file.write('\n') 
+            file.write(str(x[1]))
+            print(str(x[1]))
+           # file.write('\n') 
+#            file.write(str(x[2])) 
             file.close()
     cnx.close()
+
